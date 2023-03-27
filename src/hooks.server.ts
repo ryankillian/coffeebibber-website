@@ -5,9 +5,13 @@ import type { PageView, UserRecord } from '$lib/types';
 
 import type { Handle } from '@sveltejs/kit';
 import { sequence } from '@sveltejs/kit/hooks';
-import { createHandler } from 'svelte-kit-bot-block';
+import { createHandler, defaultOptions } from 'svelte-kit-bot-block';
 
 const botHandle = createHandler({ block: true });
+
+export const bHandle = createHandler({
+	pathnames: [...defaultOptions.pathnames, /\.sql$/]
+});
 
 const mainHandle: Handle = async ({ event, resolve }) => {
 	event.locals.pb = new PocketBase(POCKETBASE_URL);
