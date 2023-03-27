@@ -1,0 +1,38 @@
+{
+	"name": "coffee",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-node": "^1.2.2",
+		"@sveltejs/kit": "^1.5.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"svelte-headless-table": "^0.17.2",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.2",
+		"vite": "^4.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fontsource/pt-mono": "^4.5.11",
+		"@picocss/pico": "^1.5.7",
+		"dotenv": "^16.0.3",
+		"pocketbase": "^0.12.1",
+		"svelte-french-toast": "^1.0.3",
+		"svelte-kit-bot-block": "^0.0.3",
+		"zod": "^3.20.6",
+		"zod-form-data": "^2.0.0"
+	}
+}
