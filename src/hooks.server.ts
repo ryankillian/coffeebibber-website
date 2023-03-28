@@ -7,9 +7,8 @@ import type { Handle } from '@sveltejs/kit';
 import { sequence } from '@sveltejs/kit/hooks';
 import { createHandler, defaultOptions } from 'svelte-kit-bot-block';
 
-const botHandle = createHandler({ block: true });
-
-export const bHandle = createHandler({
+const botHandle = createHandler({
+	block: true,
 	pathnames: [...defaultOptions.pathnames, /\.sql$/]
 });
 
