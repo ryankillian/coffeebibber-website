@@ -10,5 +10,4 @@
 		</li>
 	</ul>
 </nav>
-<h1>Tasting notes</h1>
 <slot />

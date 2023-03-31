@@ -9,7 +9,16 @@ import { createHandler, defaultOptions } from 'svelte-kit-bot-block';
 
 const botHandle = createHandler({
 	block: true,
-	pathnames: [...defaultOptions.pathnames, /\.sql$/, /^\/reset-password$/, /^\/wp-includes/]
+	pathnames: [
+		...defaultOptions.pathnames,
+		/\.sql$/,
+		/^\/reset-password$/,
+		/^\/wp/,
+		/^\/wordpress/,
+		/^\/backup/,
+		/^\/bk/,
+		/^\/bc/
+	]
 });
 
 const mainHandle: Handle = async ({ event, resolve }) => {

@@ -1,9 +1,5 @@
 @import '@fontsource/pt-mono';
 
-:root {
-	--font-family: 'PT Mono', monospace;
-}
-
 /* [data-theme='light'],
 :root:not([data-theme='dark']) {
 	--primary: #10d882;
@@ -53,11 +49,11 @@
 }
 
 :root {
+	--font-family: 'PT Mono', monospace;
 	--form-element-active-border-color: var(--primary);
 	--form-element-focus-color: var(--primary-focus);
 	--switch-color: var(--primary-inverse);
 	--switch-checked-background-color: var(--primary);
-	--form-element-invalid-border-color: tomato;
 }
 
 @media screen and (max-width: 800px) {

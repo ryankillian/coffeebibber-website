@@ -10,5 +10,4 @@
 		</li>
 	</ul>
 </nav>
-<h1>Producers</h1>
 <slot />

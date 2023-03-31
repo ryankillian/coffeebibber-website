@@ -5,7 +5,7 @@
 <SEO />
 
 <h1>Coffee Bibber</h1>
-<p>The site for coffee connoisseurs</p>
+<p>The best site for coffee connoisseurs</p>
 
 <div>
 	<a href="/cultivar" role="button" class="primary"> Cultivars</a>

@@ -10,5 +10,4 @@
 		</li>
 	</ul>
 </nav>
-<h1>Roasters</h1>
 <slot />

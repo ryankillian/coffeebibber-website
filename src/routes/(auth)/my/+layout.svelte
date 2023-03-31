@@ -15,5 +15,4 @@
 		</li>
 	</ul>
 </nav>
-<h1>My settings</h1>
 <slot />

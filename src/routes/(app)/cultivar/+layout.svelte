@@ -10,5 +10,4 @@
 		</li>
 	</ul>
 </nav>
-<h1>Cultivars</h1>
 <slot />

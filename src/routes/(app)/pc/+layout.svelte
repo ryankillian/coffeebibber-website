@@ -10,5 +10,4 @@
 		</li>
 	</ul>
 </nav>
-<h1>Producer's cultivars</h1>
 <slot />
