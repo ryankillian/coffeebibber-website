@@ -11,5 +11,10 @@ vite.config.ts.timestamp-*
 .prettierrc
 .prettierignore
 Dockerfile.prod_ci
+Dockerfile.prod
 Dockerfile.staging
 src/stores/cultivars.ts
+deploy-notes-dev.md
+coffee.code-workspace
+pb_schema_v_0_13_4.json
+pocketbase-notes.md

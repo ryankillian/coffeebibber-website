@@ -41,11 +41,12 @@ const mainHandle: Handle = async ({ event, resolve }) => {
 		event.locals.user = null;
 	}
 
-	try {
-		event.locals.pb.collection(PAGE_VIEW).create<PageView>({ path_name: event.url.pathname });
-	} catch (_) {
-		// TODO: Page views not essential. No await used.
-	}
+	// TODO: Get rid of this in prod
+	// try {
+	// 	event.locals.pb.collection(PAGE_VIEW).create<PageView>({ path_name: event.url.pathname });
+	// } catch (_) {
+	// 	// TODO: Page views not essential. No await used.
+	// }
 
 	const response = await resolve(event);
 
